@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FIFA WORLDCUP 2022</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <style>
+      .rotate-center {
+        animation: rotate-center 1s ease-in-out 0s infinite normal both;
+      }
+
+      body{
+        background-image: url('background.png');
+      }
+
+      @keyframes rotate-center {
+        0% {
+          transform: translateY(-500px) rotate(0);
+          animation-timing-function: ease-in;
+          opacity: 0;
+        }
+        38% {
+          transform: translateY(0) rotate(136.8deg);
+          animation-timing-function: ease-out;
+          opacity: 1;
+        }
+        55% {
+          transform: translateY(-65px) rotate(198deg);
+          animation-timing-function: ease-in;
+        }
+        72% {
+          transform: translateY(0) rotate(270deg);
+          animation-timing-function: ease-out;
+        }
+        81% {
+          transform: translateY(-28px) rotate(290deg);
+          animation-timing-function: ease-in;
+        }
+        90% {
+          transform: translateY(0) rotate(340deg);
+          animation-timing-function: ease-out;
+        }
+        95% {
+          transform: translateY(-8px) rotate(350deg);
+          animation-timing-function: ease-in;
+        }
+        100% {
+          transform: translateY(0) rotate(360deg);
+          animation-timing-function: ease-out;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="container-lg my-5 pt-5 pt-sm-4 pt-md-2 mt-md-3 pt-lg-0 d-flex justify-content-center flex-column" background>
+      
+    <h2
+    class="text-primary text-center my-4  fs-1 text-white"
+    style="font-size: 2rem !important"
+  >
+    CS Department Presents
+  </h2>
+
+    <h2
+      class="text-primary text-center my-4 fw-bold fs-1 text-white"
+      style="font-size: 3rem !important"
+    >
+      FIFA WORLD CUP 2022 PREDICTION
+    </h2>
+
+    <form class="container-md d-flex flex-column" id="contactForm">
+      <!---Team 1 Name and Score Starts Here-->
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          TEAM 1
+        </label>
+        <select
+          class="form-select form-select-lg"
+          id="team1"
+          aria-label="Default select example"
+        >
+          <option selected>Select your Team 1</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="England">England</option>
+          <option value="Iran">Iran</option>
+          <option value="USA">USA</option>
+          <option value="Wales">Wales</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Poland">Poland</option>
+          <option value="France">France</option>
+          <option value="Australia">Australia</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Tunisia">Tunisia</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Canada">Canada</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Croatia">Croatia</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Serbia">Serbia</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Senegal">Senegal</option>
+          <option value="South Korea">South Korea</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          Score of Team 1
+        </label>
+
+        <input
+          type="number"
+          min="0"
+          class="form-control form-control-lg"
+          id="score1"
+        />
+      </div>
+      <!---Team 1 Name and Score Ends Here-->
+
+      <!---Team 2 Name and Score Starts Here-->
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          TEAM 2
+        </label>
+        <select
+          class="form-select form-select-lg"
+          id="team2"
+          aria-label="Default select example"
+        >
+          <option selected>Select your Team 1</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="England">England</option>
+          <option value="Iran">Iran</option>
+          <option value="USA">USA</option>
+          <option value="Wales">Wales</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Poland">Poland</option>
+          <option value="France">France</option>
+          <option value="Australia">Australia</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Tunisia">Tunisia</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Germany">Germany</option>
+          <option value="Japan">Japan</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Canada">Canada</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Croatia">Croatia</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Serbia">Serbia</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Uruguay">Uruguay</option>
+          <option value="Senegal">Senegal</option>
+          <option value="South Korea">South Korea</option>
+        </select>
+      </div>
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          Score of Team 2
+        </label>
+
+        <input
+          type="number"
+          min="0"
+          class="form-control form-control-lg"
+          id="score2"
+        />
+      </div>
+
+      <!---Team 2 Name and Score Ends Here-->
+
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          Enter Your Name
+        </label>
+
+        <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          Email address
+        </label>
+
+        <input
+          type="email"
+          class="form-control form-control-lg"
+          id="email"
+          placeholder="name@example.com"
+        />
+      </div>
+
+      <div class="form-group my-4 my-md-3">
+        <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
+          Admmission Number (Can be found on your ID Card)
+        </label>
+
+        <input
+          type="number"
+          min="0"
+          class="form-control form-control-lg"
+          id="admno"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg my-3 mx-auto text-white">
+        Submit
+      </button>
+    </form>
+    <div
+      style="width: 100vw !important"
+      class="loading-overlay visually-hidden w-100 h-100 bg-dark opacity-50 position-fixed start-0 top-0"
+    ></div>
+    <div
+      class="loading-overlay visually-hidden w-100 h-100 position-fixed start-0 top-0 d-flex flex-column justify-content-center align-items-center"
+    >
+      <img
+        src="./fifa22ball.png"
+        class="rotate-center"
+        style="max-width: 15rem"
+      />
+      <p class="text-center text-dark fs-2 fw-bold mt-2 text-white ">Submitting...</p>
+    </div>
+  
+  <footer>
+    <div class="text-center p-3 text-white" >
+      Website Developed By CS Department
+    </div>
+ 
+  </footer>
+  
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCPxQG2co6KLeW7gP7VlmbLmaSdqU6tIBI",
+        authDomain: "fifa22-2d8f3.firebaseapp.com",
+        databaseURL: "https://fifa22-2d8f3-default-rtdb.firebaseio.com/",
+        projectId: "fifa22-2d8f3",
+        storageBucket: "fifa22-2d8f3.appspot.com",
+        messagingSenderId: "450800662664",
+        appId: "1:450800662664:web:66239b6d06bf3174da073d",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      var messagesRef = firebase.database().ref("Collected Data");
+
+      function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", submitForm);
+
+      function submitForm(e) {
+        e.preventDefault();
+        postSubmit();
+        // Get values
+        var name = getInputVal("name");
+        var email = getInputVal("email");
+        var score1 = getInputVal("score1");
+        var team1 = getInputVal("team1");
+        var score2 = getInputVal("score2");
+        var team2 = getInputVal("team2");
+        var admno = getInputVal("admno");
+
+        saveMessage(name, email, score1, team1, score2, team2, admno);
+        document.getElementById("contactForm").reset();
+      }
+
+      // Function to get form values
+      function getInputVal(id) {
+        return document.getElementById(id).value;
+      }
+
+      // Save message to firebase
+      function saveMessage(name, email, score1, team1, score2, team2, admno) {
+        var newMessageRef = messagesRef.push();
+        newMessageRef.set({
+          name: name,
+          email: email,
+          score1: score1,
+          team1: team1,
+          score2: score2,
+          team2: team2,
+          admno: admno,
+        });
+        
+      }
+      async function postSubmit() {
+        loadingOverlay = document.querySelectorAll('.loading-overlay');
+        loadingOverlay.forEach((item)=>{
+            item.classList.remove('visually-hidden')
+        })
+        await sleep(3000);
+ 
+        loadingOverlay.forEach((item)=>{
+            item.classList.add('visually-hidden')
+        })
+        alert("Your prediction has been submitted, Thank you!")
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      ntegrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+       <!-- Developed by @H4K3R13 AND @shinjith-dev  GITHUB-->
+  </body>
+</html>

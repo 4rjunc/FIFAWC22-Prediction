@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCPxQG2co6KLeW7gP7VlmbLmaSdqU6tIBI",
+  authDomain: "fifa22-2d8f3.firebaseapp.com",
+  projectId: "fifa22-2d8f3",
+  storageBucket: "fifa22-2d8f3.appspot.com",
+  messagingSenderId: "450800662664",
+  appId: "1:450800662664:web:66239b6d06bf3174da073d",
+  measurementId: "G-16VHXG3EFC"
+};
