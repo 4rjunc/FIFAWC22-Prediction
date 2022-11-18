@@ -76,7 +76,13 @@
       class="text-primary text-center my-4 fw-bold fs-1 text-white"
       style="font-size: 3rem !important"
     >
-      FIFA WORLD CUP 2022 PREDICTION
+      FIFA WORLD CUP 2022 FINAL MATCH PREDICTION
+    </h2>
+        <h2
+      class="text-primary text-center my-4 fw-bold fs-1 text-white"
+      style="font-size: 3rem !important"
+    >
+      FINAL PREDICTION
     </h2>
 
     <form class="container-md d-flex flex-column" id="contactForm">
@@ -207,7 +213,7 @@
         <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" />
       </div>
 
-      <div class="form-group my-4 my-md-3">
+      <!---<div class="form-group my-4 my-md-3">
         <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
           Email address
         </label>
@@ -218,7 +224,7 @@
           id="email"
           placeholder="name@example.com"
         />
-      </div>
+      </div>-->
 
       <div class="form-group my-4 my-md-3">
         <label for="exampleFormControlInput1" class="fs-3 fs-md-4 fw-bold mb-1 text-white">
@@ -290,14 +296,14 @@
         postSubmit();
         // Get values
         var name = getInputVal("name");
-        var email = getInputVal("email");
+        //var email = getInputVal("email");
         var score1 = getInputVal("score1");
         var team1 = getInputVal("team1");
         var score2 = getInputVal("score2");
         var team2 = getInputVal("team2");
         var admno = getInputVal("admno");
 
-        saveMessage(name, email, score1, team1, score2, team2, admno);
+        saveMessage(name,score1, team1, score2, team2, admno);
         document.getElementById("contactForm").reset();
       }
 
@@ -307,11 +313,10 @@
       }
 
       // Save message to firebase
-      function saveMessage(name, email, score1, team1, score2, team2, admno) {
+      function saveMessage(name, score1, team1, score2, team2, admno) {
         var newMessageRef = messagesRef.push();
         newMessageRef.set({
           name: name,
-          email: email,
           score1: score1,
           team1: team1,
           score2: score2,
