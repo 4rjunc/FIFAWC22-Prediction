@@ -59,6 +59,15 @@
       {
         font-family: sans-serif
       }
+
+      p {
+          text-align: center;
+          font-size: 60px;
+          margin-top: 0px;
+          color: white;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        }
     </style>
   </head>
 
@@ -108,6 +117,7 @@
           <option value="Wales">Wales</option>
           <option value="Saudi Arabia">Saudi Arabia</option>
           <option value="Mexico">Mexico</option>
+          <option value="Spain">Spain</option>
           <option value="Poland">Poland</option>
           <option value="France">France</option>
           <option value="Australia">Australia</option>
@@ -168,6 +178,7 @@
           <option value="Wales">Wales</option>
           <option value="Saudi Arabia">Saudi Arabia</option>
           <option value="Mexico">Mexico</option>
+          <option value="Spain">Spain</option>
           <option value="Poland">Poland</option>
           <option value="France">France</option>
           <option value="Australia">Australia</option>
@@ -259,6 +270,9 @@
       <p class="text-center text-dark fs-2 fw-bold mt-2 text-white ">Submitting...</p>
     </div>
   
+    <p class="fw-bold">Time Left</p>
+    <p  class="fw-bold"id="demo"></p>
+
   <footer>
     <div class="text-center p-3 text-white" >
       Website Developed By CS Department
@@ -344,6 +358,39 @@
       ntegrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <!--Countdown-->
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 20, 2022 21:30:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
+    <!--Countdown-->
        <!-- Developed by @H4K3R13 AND @shinjith-dev  GITHUB-->
   </body>
 </html>
